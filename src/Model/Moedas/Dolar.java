@@ -14,6 +14,6 @@ public class Dolar extends Moeda {
 
   @Override
   public double converter() {
-    return valor * 5.0; // Exemplo: 1 dólar = 5 reais
+    return valor * 6.02;
   }
 }

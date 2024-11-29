@@ -12,6 +12,6 @@ public class Euro extends Moeda {
   }
 
   public double converter() {
-    return valor * 5.5; // Exemplo: 1 euro = 5.5 reais
+    return valor * 6.36;
   }
 }
