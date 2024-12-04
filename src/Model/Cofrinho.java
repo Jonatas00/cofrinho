@@ -12,20 +12,23 @@ public class Cofrinho {
 
   public void adicionar(Moeda moeda) {
     listaMoedas.add(moeda);
-    System.out.println("Você adicionou " + moeda + "ao cofrinho");
   }
 
   public void remover(Moeda moeda) {
     listaMoedas.remove(moeda);
-    System.out.println("Você removeu " + moeda + "ao cofrinho");
   }
 
   public void listagemMoedas() {
     for (Moeda m : listaMoedas) {
-      System.out.println(m);
+      m.info();
     }
   }
 
   public void totalConvertido() {
+    double sum = 0;
+    for (Moeda m : listaMoedas) {
+      sum += m.converter();
+    }
+    System.out.printf("Total convertido: R$%.2f", sum);
   }
 }

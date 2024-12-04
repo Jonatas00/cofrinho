@@ -3,6 +3,8 @@ package Model.Moedas;
 import Model.Moeda;
 
 public class Euro extends Moeda {
+  public static final String nome = "Euro";
+
   public Euro(double valor) {
     super(valor);
   }
@@ -15,5 +17,4 @@ public class Euro extends Moeda {
     System.out.println("Euro:" + valor);
 
   }
-
 }
