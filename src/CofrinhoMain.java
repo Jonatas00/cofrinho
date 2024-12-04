@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 import Model.Cofrinho;
@@ -19,18 +20,29 @@ public class CofrinhoMain {
       switch (input) {
         case "1":
           menu.adicionarMoeda();
+
+          String opcao = sc.nextLine();
+
+          System.out.println("Digite o valor que será adicionado: ");
+          double valor = sc.nextDouble();
+
+          System.out.println(opcao + valor);
           break;
         case "2":
           // todo
+          break;
         case "3":
           // todo
+          break;
         case "4":
           // todo
+          break;
         case "0":
           sair = true;
           break;
         default:
           System.out.println("Digite uma opção válida!");
+          break;
       }
     }
     sc.close();
