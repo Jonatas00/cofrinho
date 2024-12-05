@@ -8,7 +8,6 @@ public class Menu {
   }
 
   public void opcoes() {
-    System.out.println("Aluno: Jonatas Rodrigues Damasceno - RU: 4589297");
     System.out.println("COFRINHO BANKS:");
     System.out.println("1 - Adicionar moeda");
     System.out.println("2 - Remover moeda");
@@ -17,7 +16,7 @@ public class Menu {
     System.out.println("0 - Encerrar");
   }
 
-  public void adicionarMoeda() {
+  public void moedas() {
     limparTerminal();
     System.out.println("Escolha a moeda:");
     System.out.println("1 - Real");
