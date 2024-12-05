@@ -1,6 +1,7 @@
 # Trabalho Programação Orientação a Objetos
 
-Esse trabalho foi feito na matéria de POO (Programação Orientada a Objetos), com o intuito de desenvolver as habilidades práticas aprendidas durante as aulas.
+Esse trabalho foi feito na matéria de POO (Programação Orientada a Objetos), com o intuito de desenvolver as habilidades
+práticas aprendidas durante as aulas.
 
 ## Requisitos Funcionais da aplicação
 
