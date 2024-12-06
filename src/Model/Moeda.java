@@ -11,6 +11,7 @@ public abstract class Moeda {
 
   public abstract double converter();
 
+  // Comparador de moedas utilizado na hora de remover a moeda
   @Override
   public boolean equals(Object obj) {
     if (this == obj) return true;
