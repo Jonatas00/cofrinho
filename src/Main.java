@@ -7,7 +7,7 @@ import Model.Moedas.Real;
 import java.util.Scanner;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws InterruptedException {
 
     Cofrinho cofrinho = new Cofrinho();
     Menu menu = new Menu();
@@ -36,9 +36,9 @@ public class Main {
 
         case "2":
           menu.moedas();
-          String escolha = sc.nextLine();
+          escolha = sc.nextLine();
           System.out.println("Digite a quantidade de moedas que será removida: ");
-          int quantidade = sc.nextInt();
+          quantidade = sc.nextInt();
 
           switch (escolha) {
             case "1" -> cofrinho.remover(new Real(quantidade));
