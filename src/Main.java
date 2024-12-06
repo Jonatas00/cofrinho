@@ -1,5 +1,6 @@
 import Model.Cofrinho;
 import Model.Menu;
+import Model.Moeda;
 import Model.Moedas.Dolar;
 import Model.Moedas.Euro;
 import Model.Moedas.Real;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) throws InterruptedException {
+
 
     Cofrinho cofrinho = new Cofrinho();
     Menu menu = new Menu();
@@ -36,14 +38,17 @@ public class Main {
 
         case "2":
           menu.moedas();
-          escolha = sc.next();
+          String moeda = sc.next();
           System.out.println("Digite a quantidade de moedas que será removida: ");
-          quantidade = sc.nextInt();
-
-          switch (escolha) {
-            case "1" -> cofrinho.remover(new Real(quantidade));
-            case "2" -> cofrinho.remover(new Dolar(quantidade));
-            case "3" -> cofrinho.remover(new Euro(quantidade));
+          double valor = sc.nextDouble();
+          Moeda moedaEscolhida = null;
+          switch (moeda) {
+            case "1" -> moedaEscolhida = new Real(valor);
+            case "2" -> moedaEscolhida = new Dolar(valor);
+            case "3" -> moedaEscolhida = new Euro(valor);
+          }
+          if (moedaEscolhida != null) {
+            cofrinho.remover(moedaEscolhida);
           }
           break;
 
@@ -53,7 +58,7 @@ public class Main {
           break;
 
         case "4":
-            cofrinho.totalConvertido();
+          cofrinho.totalConvertido();
           break;
 
         case "0":

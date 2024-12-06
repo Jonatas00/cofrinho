@@ -18,11 +18,16 @@ public class Cofrinho {
     Thread.sleep(2000);
   }
 
-  public void remover(Moeda moeda) throws InterruptedException {
+  public void remover(Moeda moedaEscolhida) throws InterruptedException {
     System.out.println("==========");
-    System.out.println("Você removeu: \n");
-    moeda.info();
-    listaMoedas.remove(moeda);
+    for (Moeda m : listaMoedas) {
+      if (m.equals(moedaEscolhida)) {
+        System.out.println("Removendo da lista...");
+        listaMoedas.remove(m);
+        System.out.println("Moeda removida!");
+        break;
+      }
+    }
     System.out.println("==========");
     Thread.sleep(2000);
   }
