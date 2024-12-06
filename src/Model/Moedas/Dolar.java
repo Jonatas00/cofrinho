@@ -4,8 +4,6 @@ import Model.Moeda;
 
 public class Dolar extends Moeda {
 
-  public static final String nome = "Dolar";
-
   public Dolar(double valor) {
     super(valor);
   }
@@ -15,6 +13,6 @@ public class Dolar extends Moeda {
   }
 
   public void info() {
-    System.out.println("Dolar:" + valor);
+    System.out.println("Dolar: " + valor);
   }
 }

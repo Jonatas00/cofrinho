@@ -18,12 +18,12 @@ public class Main {
     System.out.println("Aluno: Jonatas Rodrigues Damasceno - RU: 4589297");
     while (!opcao.equals("0")) {
       menu.opcoes();
-      opcao = sc.nextLine();
+      opcao = sc.next();
 
       switch (opcao) {
         case "1":
           menu.moedas();
-          String escolha = sc.nextLine();
+          String escolha = sc.next();
           System.out.println("Digit a quantidade de moedas: ");
           int quantidade = sc.nextInt();
 
@@ -36,7 +36,7 @@ public class Main {
 
         case "2":
           menu.moedas();
-          escolha = sc.nextLine();
+          escolha = sc.next();
           System.out.println("Digite a quantidade de moedas que será removida: ");
           quantidade = sc.nextInt();
 
@@ -53,6 +53,7 @@ public class Main {
           break;
 
         case "4":
+            cofrinho.totalConvertido();
           break;
 
         case "0":
